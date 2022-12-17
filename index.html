@@ -14,18 +14,20 @@
 
 <body class="h-100 w-100 d-flex justify-content-center align-items-center">
       <!-- Container principal -->
-      <div class="mainBox h-75 w-75 d-flex flex-column">
+      <div class="mainBox h-100 w-75 d-flex flex-column align-items-center justify-content-center">
 
             <!-- Nav bar LOGIN/CADASTRO -->
-            <nav class="navbar navbar-expand-lg text ">
+            <nav class="navbar navbar-expand-lg text w-75 d-flex align-items-center justify-content-center">
                   <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav ">
                                     <li class="nav-item">
-                                          <a class="nav-link text-light" href="#">LOGIN</a>
+                                          <a class="nav-link  disabled text-light fs-5 border-bottom border-secondary"
+                                                href="#">LOGIN</a>
                                     </li>
                                     <li class="nav-item">
-                                          <a class="nav-link disabled text-light">CADASTRO</a>
+                                          <a class="nav-link  text-light fs-5" href="#">CADASTRO</a>
+                                          <!-- A Classe disable será útil para desabilitar o botão do NavBar quando o usuário já estiver na tela -->
                                     </li>
                               </ul>
                         </div>
@@ -33,25 +35,26 @@
             </nav>
 
             <!-- Logo carOn -->
-            <div class="mainLogo d-flex ">
-                  <h1 class="text-light">car <h1 class="text-info">On</h1>
+            <div class="mainLogo d-flex w-75 d-flex justify-content-center align-items-center">
+                  <h1 class="text-light fs-1">car <h1 class="text-info">On</h1>
                   </h1>
             </div>
 
             <!-- Formulário de LOGIN -->
-            <div class="formBox">
+            <div class="formBox w-75 h-50 d-flex flex-column justify-content-around align-items-center">
                   <!-- Inputs de texto -->
-                  <div class="input-group mb-3 w-50">
-                        <input type="text" class="form-control w-50 loginInput" placeholder="RA" aria-label="Username"
-                              aria-describedby="basic-addon1">
+                  <div class="input-group mb-3 w-50 ">
+                        <input type="text" class="form-control w-50 loginInput p-0 grey border-bottom border-secondary "
+                              placeholder="RA" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
-                  <div class="input-group mb-3 w-50">
-                        <input type="text" class="form-control w-50 loginInput" placeholder="Senha"
-                              aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group mb-3 w-50 ">
+                        <input type="password"
+                              class="form-control w-50 loginInput p-0 grey border-bottom border-secondary "
+                              placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
 
                   <!-- Inputs de marcação -->
-                  <div class="checkBox d-flex flex-row w-50">
+                  <div class="checkBox d-flex flex-row w-50 justify-content-between">
                         <div class="form-check">
                               <input class="form-check-input" type="radio" name="flexRadioDefault"
                                     id="flexRadioDefault1">
@@ -67,7 +70,7 @@
                               </label>
                         </div>
                   </div>
-
+                  <!-- Botão de envio -->
                   <button type="button" class="btn btn-outline-info w-25">ENTRAR</button>
 
 
