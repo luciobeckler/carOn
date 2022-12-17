@@ -1,3 +1,5 @@
+Cores:
+
 darkblue = #13293d
 blue = #1b98e0
 white = #ffffff
