@@ -12,6 +12,9 @@
     }
 
 /* Cores para trocar o */
+.colorWhite{
+      color: white;
+}
 
 .colorWhite:hover{
       color: white;
