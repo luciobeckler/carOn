@@ -1,3 +1,10 @@
+body{
+      width: 85%;
+}
+
+.fonteGrande{
+     font-size: 4rem;
+}
 
 .loginInput{
       border: none;
@@ -8,6 +15,7 @@
 
     .loginInput:focus {
       border-bottom:1px solid ;
+      background-color: transparent;
       color: white;
     }
 
