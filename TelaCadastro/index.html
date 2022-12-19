@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100 w-100 ">
+<html lang="en" class="h-100 w-100 d-flex justify-content-center">
 
 <head>
       <meta charset="UTF-8">
@@ -12,20 +12,20 @@
       <title>Document</title>
 </head>
 
-<body class="h-100 w-100 d-flex justify-content-center align-items-center backgroundDarkBlue">
+<body class=" d-flex align-items-center justify-content-center backgroundDarkBlue">
       <!-- Container principal -->
-      <div class="mainBox w-50 h-50 d-flex flex-column align-items-center justify-content-center">
+      <div class="mainBox w-50 h-75 d-flex flex-column  justify-content-evenly">
 
             <!-- Nav bar LOGIN/CADASTRO -->
             <nav class="navbar navbar-expand-lg text w-75 d-flex align-items-center justify-content-center">
                   <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse w-50" id="navbarNav">
                               <ul class="navbar-nav ">
                                     <li class="nav-item">
-                                          <a class="nav-link   text-light fs-5 " href="#">LOGIN</a>
+                                          <a class="nav-link p-0   text-light fs-5 " href="#">LOGIN</a>
                                     </li>
                                     <li class="nav-item">
-                                          <a class="nav-link  text-light fs-5 disabled border-bottom border-secondary"
+                                          <a class="nav-link p-0 mx-3 text-light fs-5 disabled border-bottom border-secondary"
                                                 href="#">CADASTRO</a>
                                           <!-- A Classe disable será útil para desabilitar o botão do NavBar quando o usuário já estiver na tela -->
                                     </li>
@@ -35,10 +35,10 @@
             </nav>
             <!-- Grid para os INPUTS -->
             <!-- Input de nome -->
-            <div class="container text-center">
+            <div class="container text-center m-0 p-0 d-flex flex-column">
                   <div class="row">
-                        <div class="col-sm-12 text-light">
-                              <div class="input-group mb-3 w-50 ">
+                        <div class="col-sm-12 text-light m-0 p-0">
+                              <div class="input-group mb-3 w-75 ">
                                     <input type="name"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
                                           placeholder="Nome completo" aria-label="Username"
@@ -48,8 +48,8 @@
                   </div>
                   <!-- Input de e-mail e bairro -->
                   <div class="row">
-                        <div class="col-sm-12 text-light">
-                              <div class="input-group mb-3 w-50 ">
+                        <div class="col-sm-12 text-light m-0 p-0">
+                              <div class="input-group mb-3 w-75 ">
                                     <input type="text"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
                                           placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1">
@@ -60,14 +60,14 @@
                   </div>
                   <!-- Input de RA e turno -->
                   <div class="row">
-                        <div class="col-sm-6 text-light">
+                        <div class="col-sm-6 text-light m-0 p-0">
                               <div class="input-group mb-3 w-50 ">
-                                    <input type="number"
+                                    <input type="text"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
                                           placeholder="RA" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                         </div>
-                        <div class="col-sm-6 text-light">
+                        <div class="col-sm-6 text-light m-0 p-0">
                               <div class="input-group mb-3 w-50 ">
                                     <input type="text"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
@@ -77,7 +77,7 @@
                   </div>
                   <!-- Input de celular e disponibilidade -->
                   <div class="row">
-                        <div class="col-sm-6 text-light">
+                        <div class="col-sm-6 text-light m-0 p-0">
                               <div class="input-group mb-3 w-50 ">
                                     <input type="text"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
@@ -86,7 +86,7 @@
                               </div>
                         </div>
 
-                        <div class="col-sm-6 text-light">
+                        <div class="col-sm-6 text-light m-0 p-0">
                               <div class="input-group mb-3 w-50 ">
                                     <input type="text"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
@@ -97,14 +97,14 @@
                   </div>
                   <!-- Input de Senha e confirmação de senha -->
                   <div class="row">
-                        <div class="col-sm-6 text-light">
+                        <div class="col-sm-6 text-light m-0 p-0">
                               <div class="input-group mb-3 w-50 ">
                                     <input type="password"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
                                           placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                         </div>
-                        <div class="col-sm-6 text-light">
+                        <div class="col-sm-6 text-light m-0 p-0">
                               <div class="input-group mb-3 w-50 ">
                                     <input type="password"
                                           class="form-control w-50 loginInput p-0 border-bottom border-secondary backgroundDarkBlue"
@@ -114,30 +114,31 @@
                         </div>
                   </div>
                   <!-- Toogle button de seleção passageiro/motorista -->
-                  <div class="buttonBox">
-                        <div class="box">
-                              <input class="type-checkbox" id="toogle" type="checkbox" name="name">
-                              <label class="estado" for="toogle">
-                                    <span class="aprobado">PASSAGEIRO</span>
-                                    <span class="desaprobado">MOTORISTA</span>
-                              </label>
-                        </div>
-                        <!-- Botão de envio -->
-                        <a href="#" class="btn btn-sm animated-button victoria-four w-25">Learn more</a>
+            </div>
+            <div class="buttonBox d-flex justify-content-evenly w-75 align-items-center">
+                  <div class="box">
+                        <input class="type-checkbox" id="toogle" type="checkbox" name="name">
+                        <label class="estado" for="toogle">
+                              <span class="aprobado">PASSAGEIRO</span>
+                              <span class="desaprobado">MOTORISTA</span>
+                        </label>
                   </div>
+                  <!-- Botão de envio -->
+                  <a href="#" class="btn btn-sm animated-button victoria-four w-25">Learn more</a>
             </div>
       </div>
-      <div class="logoBox">
-            <div class="mainLogo d-flex w-75 d-flex justify-content-center align-items-center">
-                  <h1 class="text-light fs-1">car <h1 class="text-info">On</h1>
+      <div class="logoBox  w-50 h-75 d-flex flex-column">
+            <div class="mainLogo d-flex w-75 d-flex  align-items-center mt-5 fonteGrande">
+                  <h1 class="text-light fonteGrande">car
+                        <h1 class="text-info  fw-bolder fonteGrande">On</h1>
                   </h1>
             </div>
 
-            <h1 class="text-light">Uma nota forma de ir a escola</h1>
+            <h3 class="text-light">Uma nota forma de ir a escola</h3>
       </div>
 
 
-
+      <!--  -->
 
 
 
