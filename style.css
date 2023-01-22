@@ -1,14 +1,16 @@
-body{
-      width: 85%;
+.loginBox{
+      display: none;
 }
 
-.fonteGrande{
-     font-size: 4rem;
+.cadastroBox{
+      display: flex;
+      width: 85%;
 }
 
 .loginInput{
       border: none;
       border-radius: 0px;
+      font-size: 20px;
 
 }
 
@@ -21,7 +23,7 @@ body{
 
 /* Cores para trocar o */
 .colorWhite{
-      color:white;
+      color: white;
 }
 
 .colorWhite:hover{
@@ -37,8 +39,9 @@ body{
 }
 
 .colorLightBlue{
-      color:#0dcaf0 ;
+      color:#81c4e9 ;
 }
+
 
 /* Botão animado */
 
@@ -106,6 +109,41 @@ a.animated-button:link, a.animated-button:visited {
 
 /* Victoria Buttons */
 
+a.animated-button.victoria-one {
+	border: 2px solid #0dcaf0;
+}
+a.animated-button.victoria-one:after {
+	background: #0dcaf0;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.victoria-two {
+	border: 2px solid #0dcaf0;
+}
+a.animated-button.victoria-two:after {
+	background: #0dcaf0;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.victoria-three {
+	border: 2px solid #0dcaf0;
+}
+a.animated-button.victoria-three:after {
+	background: #0dcaf0;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+	height: 140%;
+	opacity: 1;
+}
 a.animated-button.victoria-four {
 	border: 2px solid #0dcaf0;
 }
@@ -121,6 +159,8 @@ a.animated-button.victoria-four:hover:after {
 	opacity: 1;
 	height: 600% !important;
 }
+
+/* Botão animado */
 
 /* Botão Toogle */
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
@@ -224,3 +264,6 @@ span {
 .type-checkbox:checked + label:before {
   left: 8px;
 }
+
+
+
